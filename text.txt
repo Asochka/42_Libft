@@ -1,0 +1,6 @@
+fix memmove, strlcpy
+do the strlcat
+check toupper & tolower
+...
+check with unit tests
+create the lib

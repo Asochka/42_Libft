@@ -6,10 +6,8 @@ void *ft_memset(void *buf, int c, size_t count)
 {
 	size_t i;
 	unsigned char *res;
-	unsigned char *r;
 
 	res = (unsigned char *)buf;
-	r = (unsigned char *)buf;
 	i = 0;
 	while (i < count)
 	{
@@ -17,7 +15,7 @@ void *ft_memset(void *buf, int c, size_t count)
 		res++;
 		i++;
 	}
-	return r;
+	return (buf);
 }
 
 int main()
