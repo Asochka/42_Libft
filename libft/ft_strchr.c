@@ -1,7 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 
-char *strchr(const char *str, int ch)
+char *ft_strchr(const char *str, int ch)
 {
 	int i;
 	char *res;
