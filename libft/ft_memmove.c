@@ -5,29 +5,21 @@
 void *ft_memmove(void *destptr, const void *srcptr, size_t num)
 {
 	size_t i;
-	unsigned char *dest;
-	unsigned char *src;
-	unsigned char *res;
-	unsigned char *buf;
-	unsigned char *cpybuf;
+	char mass[num];
 
 	i = 0;
-	res = (unsigned char *)destptr;
-	dest = (unsigned char *)destptr;
-	src = (unsigned char *)srcptr;
-	cpybuf = buf;
-	while (i < num)
+	while (i < num) && (*srcptr)
 	{
-		*(buf++) = *(src++);
+		(mass[i]) = *(char *)(srcptr + i);
 		i++;
 	}
 	i = 0;
 	while (i < num)
 	{
-		*(dest++) = *(buf++);
+		*(char *)(destptr + i) = mass[i];
 		i++;
 	}
-	return res;
+	return (destptr);
 }
 
 int main()

@@ -6,18 +6,15 @@ size_t ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t i;
 	size_t res;
-	const char *srccpy;
 
-	srccpy = src;
-	while ((i < size) && (*dst) && (*src))
+	while ((i < size - 1) && (*dst) && (*src))
 	{
 		*(dst++) = *(src++);
 		i++;
 	}
-	*dst = '\0';
-	while(*srccpy)
-		res++;
-	return res;
+	if (*dst != '\0')
+		*dst = '\0';
+	return (ft_strlen(src));
 }
 
 int main(void)
