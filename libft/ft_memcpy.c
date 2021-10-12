@@ -27,7 +27,6 @@ int main()
 	char str2[] = "987654321";
 	char str3[] = "123456789";
 	char str4[] = "987654321";
-	char *str5 = &str1[]
 	memcpy(str2, str1, 5);
 	ft_memcpy(str4, str3, 5);
 	printf("%s\n", str2);
