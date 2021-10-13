@@ -6,13 +6,13 @@ void *ft_memmove(void *destptr, const void *srcptr, size_t num)
 	char mass[num];
 
 	i = 0;
-	while ((i < num) && (*(char *)srcptr))
+	while ((i < num) && (*(char *)(srcptr + i)))
 	{
 		(mass[i]) = *(char *)(srcptr + i);
 		i++;
 	}
 	i = 0;
-	while (i < num)
+	while ((i < num) && (*(char *)(srcptr + i)))
 	{
 		*(char *)(destptr + i) = mass[i];
 		i++;
@@ -22,17 +22,12 @@ void *ft_memmove(void *destptr, const void *srcptr, size_t num)
 
 int main()
 {
-	unsigned char src[10]= "1234567890";
-	unsigned char src1[10]= "1234567890";
-	char str1[] = "123456789";
-	char str2[] = "987654321";
-	char str3[] = "123456789";
-	char str4[] = "987654321";
-	memmove(&src[4], &src[3], 3);
-	ft_memmove(&src1[4], &src1[3], 3);
-	//ft_memcpy(str4, str3, 5);
-	//printf("%s\n", str2);
-	//printf("%s", str4);
-	printf("%s\n", src);
-	printf("%s", src1);
+	unsigned char src[10]= "123456789";
+	unsigned char src1[10]= "123456789";
+
+	memmove(&src1[4], &src1[3], 16);
+	ft_memmove(&src[4], &src[3], 16);
+
+	printf("%s\n", src1);
+	printf("%s", src);
 }

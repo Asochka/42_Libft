@@ -3,8 +3,8 @@
 
 #include <stddef.h>
 
-#include <stdio.h>
-#include <string.h>
+#include <stdio.h>//remove
+#include <string.h>//remove
 
 int ft_strlen(char *s);
 int	ft_toupper(int character);

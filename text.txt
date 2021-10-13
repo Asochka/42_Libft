@@ -1,4 +1,3 @@
-memmove
-strlcat
-strlcpy
+strlcat//...
+strlcpy//хз что делать тк он не понимает что это такое
 strncmp
