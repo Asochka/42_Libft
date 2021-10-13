@@ -21,8 +21,8 @@ int main()
 {
 	char str1[] = "123456789";
 	char str2[] = "123456789";
-	bzero(str1, 1);
+	//bzero(str1, 1);
 	ft_bzero(str2, 1);
-	printf("%s\n", str1);
+	//printf("%s\n", str1);
 	printf("%s", str2);
 }
