@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-#include <stddef.h>
+#include "header.h"
 
 void ft_bzero(void *s, size_t n)
 {

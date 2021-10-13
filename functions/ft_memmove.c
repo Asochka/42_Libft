@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-#include <stddef.h>
+#include "header.h"
 
 void *ft_memmove(void *destptr, const void *srcptr, size_t num)
 {
@@ -8,7 +6,7 @@ void *ft_memmove(void *destptr, const void *srcptr, size_t num)
 	char mass[num];
 
 	i = 0;
-	while (i < num) && (*srcptr)
+	while ((i < num) && (*(char *)srcptr))
 	{
 		(mass[i]) = *(char *)(srcptr + i);
 		i++;

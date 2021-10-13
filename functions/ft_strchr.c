@@ -1,5 +1,4 @@
-#include <string.h>
-#include <stdio.h>
+#include "header.h"
 
 char *ft_strchr(const char *str, int ch)
 {
@@ -14,6 +13,7 @@ char *ft_strchr(const char *str, int ch)
 		res++;
 	}
 	return (res);
+
 }
 
 int main()

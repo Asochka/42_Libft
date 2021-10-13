@@ -1,5 +1,4 @@
-#include <ctype.h>
-#include <stdio.h>
+#include "header.h"
 
 int	ft_toupper(int character)
 {

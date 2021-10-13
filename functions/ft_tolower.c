@@ -1,7 +1,6 @@
-#include <ctype.h>
-#include <stdio.h>
+#include "header.h"
 
-int	ft_toupper(int character)
+int	ft_tolower(int character)
 {
 	if (character >= 65 && character <= 90)
 		return (character + 32);

@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-#include <stddef.h>
+#include "header.h"
 
 void *ft_memcpy(void *destptr, const void *srcptr, size_t num)
 {

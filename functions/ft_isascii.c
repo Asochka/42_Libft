@@ -1,3 +1,5 @@
+#include "header.h"
+
 int	ft_isascii(unsigned char c)
 {
 	if (c >= 0 && c <= 127)
