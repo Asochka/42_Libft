@@ -1,10 +1,6 @@
 strlcat//...
 strlcpy//хз что делать тк он не понимает что это такое
-
-memchr!!!
-memcmp
 strnstr
-atoi
 
 calloc
 strdup

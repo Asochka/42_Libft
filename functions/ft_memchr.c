@@ -9,7 +9,7 @@ void *ft_memchr(const void *arr, int c, size_t n)
 	i = 0;
 	k = (unsigned char)c;
 	arrcpy = (unsigned char *)arr;
-	while (i < n && (*(arrcpy + i) == (unsigned char)c))
+	while (i < n)
 	{
 		if (*(arrcpy + i) == (unsigned char)c)
 			return ((void *)(arr + i));
@@ -21,13 +21,18 @@ void *ft_memchr(const void *arr, int c, size_t n)
 int main()
 {
 	unsigned char src[15]="1234567890";
-   char *sym;
+	char *sym;
+	char *sym1;
 
-   printf ("src old: %s\n",src);
-   sym = ft_memchr(src, '4', 9);
+	sym = ft_memchr(src, '4', 9);
+	sym1 = memchr(src, '4', 9);
 
-   if (sym != NULL)
-  	 printf ("src new: %s\n",src);
+	if (sym != NULL)
+		printf ("src new: %s\n",src);
 	else 
-		printf("no such sym");
+		printf("no such sym\n");
+	if (sym1 != NULL)
+		printf ("src new: %s\n",src);
+	else 
+		printf("no such sym\n");
 }
