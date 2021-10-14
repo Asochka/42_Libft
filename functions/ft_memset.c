@@ -1,9 +1,9 @@
 #include "header.h"
 
-void *ft_memset(void *buf, int c, size_t count)
+void	*ft_memset(void *buf, int c, size_t count)
 {
-	size_t i;
-	unsigned char *res;
+	size_t			i;
+	unsigned char	*res;
 
 	res = (unsigned char *)buf;
 	i = 0;

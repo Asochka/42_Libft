@@ -1,6 +1,4 @@
-strlcat//...
-strlcpy//хз что делать тк он не понимает что это такое
-strnstr
-
+strlcat
 calloc
-strdup
+
+трабл с тем что не видны функции из хэдера.. в strnstr b strdup

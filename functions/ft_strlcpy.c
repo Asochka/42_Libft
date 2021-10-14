@@ -1,9 +1,9 @@
 #include "header.h"
 
-size_t ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t i;
-	size_t res;
+	size_t	i;
+	size_t	res;
 
 	while ((i < size - 1) && (*dst) && (*src))
 	{
@@ -12,7 +12,7 @@ size_t ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	if (*dst != '\0')
 		*dst = '\0';
-	return ((size_t)(ft_strlen((char *)src)));
+	return (ft_strlen(src));
 }
 
 int main()

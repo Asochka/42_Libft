@@ -1,11 +1,11 @@
 #include "header.h"
 
-void *ft_memcpy(void *destptr, const void *srcptr, size_t num)
+void	*ft_memcpy(void *destptr, const void *srcptr, size_t num)
 {
-	size_t i;
-	unsigned char *dest;
-	unsigned char *src;
-	unsigned char *res;
+	size_t			i;
+	unsigned char	*dest;
+	unsigned char	*src;
+	unsigned char	*res;
 
 	i = 0;
 	res = (unsigned char *)destptr;
@@ -16,7 +16,7 @@ void *ft_memcpy(void *destptr, const void *srcptr, size_t num)
 		*(dest++) = *(src++);
 		i++;
 	}
-	return res;
+	return (res);
 }
 
 int main()

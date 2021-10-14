@@ -1,10 +1,10 @@
 #include "header.h"
 
-int ft_memcmp(const void *arr1, const void *arr2, size_t n)
+int	ft_memcmp(const void *arr1, const void *arr2, size_t n)
 {
-	size_t i;
-	unsigned char *arrcpy1;
-	unsigned char *arrcpy2;
+	size_t			i;
+	unsigned char	*arrcpy1;
+	unsigned char	*arrcpy2;
 
 	i = 0;
 	arrcpy1 = (unsigned char *)arr1;

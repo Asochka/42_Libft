@@ -1,8 +1,8 @@
 #include "header.h"
 
-int ft_strlen(char *s)
+size_t	ft_strlen(const char *s)
 {
-	int i;
+	size_t	i;
 
 	i = 0;
 	while (*s)
@@ -10,7 +10,7 @@ int ft_strlen(char *s)
 		i++;
 		s++;
 	}
-	return i;
+	return (i);
 }
 
 int main()

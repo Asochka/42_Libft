@@ -1,10 +1,10 @@
 #include "header.h"
 
-void *ft_memchr(const void *arr, int c, size_t n)
+void	*ft_memchr(const void *arr, int c, size_t n)
 {
-	size_t i;
-	unsigned char k;
-	unsigned char *arrcpy;
+	size_t			i;
+	unsigned char	k;
+	unsigned char	*arrcpy;
 
 	i = 0;
 	k = (unsigned char)c;

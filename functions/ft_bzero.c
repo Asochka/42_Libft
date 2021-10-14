@@ -1,9 +1,9 @@
 #include "header.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	size_t i;
-	unsigned char *res;
+	size_t			i;
+	unsigned char	*res;
 
 	i = 0;
 	res = (unsigned char *)s;

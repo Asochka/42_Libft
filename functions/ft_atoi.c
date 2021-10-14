@@ -1,10 +1,10 @@
 #include "header.h"
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int i;
-	int res;
-	int min;
+	int	i;
+	int	res;
+	int	min;
 
 	i = 0;
 	res = 0;

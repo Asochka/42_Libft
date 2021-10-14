@@ -1,9 +1,9 @@
 #include "header.h"
 
-void *ft_memmove(void *destptr, const void *srcptr, size_t num)
+void	*ft_memmove(void *destptr, const void *srcptr, size_t num)
 {
-	size_t i;
-	char mass[num];
+	size_t	i;
+	char	mass[num];
 
 	i = 0;
 	while ((i < num) && (*(char *)(srcptr + i)))
