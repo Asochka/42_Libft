@@ -1,3 +1,10 @@
 strlcat//...
 strlcpy//хз что делать тк он не понимает что это такое
-strncmp
+
+memchr!!!
+memcmp
+strnstr
+atoi
+
+calloc
+strdup
