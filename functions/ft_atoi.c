@@ -22,7 +22,7 @@ int	ft_atoi(const char *str)
 		res = 10*res + (int)(str[i] - 48);
 		i++;
 	}
-	return (res*min);
+	return (res * min);
 }
 
 int main()

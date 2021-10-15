@@ -1,7 +1,5 @@
 #include "header.h"
 
-//int ft_strncmp(const char *string1, const char *string2, size_t num);
-
 char *ft_strnstr(const char	*big, const char *little, size_t len)
 {
 	int		i;
