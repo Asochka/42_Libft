@@ -1,2 +1,0 @@
-трабл с тем что не видны функции из хэдера.. в strnstr, strdup,
-(strlcpy, strlcat - have the alternative ft strlen...)
