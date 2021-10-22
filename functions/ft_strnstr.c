@@ -1,5 +1,20 @@
 #include "header.h"
 
+static size_t	ft_strnlen(const char *s, size_t maxlen)
+{
+	size_t	i;
+
+	i = 0;
+	while (*s)
+	{
+		if (i == maxlen - 1)
+			return (maxlen);
+		i++;
+		s++;
+	}
+	return i;
+}
+
 char *ft_strnstr(const char	*big, const char *little, size_t len)
 {
 	int		i;

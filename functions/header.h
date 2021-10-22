@@ -30,19 +30,4 @@ void	*ft_calloc(size_t num, size_t size);
 void	ft_bzero(void *s, size_t n);
 int	ft_atoi(const char *str);
 
-size_t	ft_strnlen(const char *s, size_t maxlen)
-{
-	size_t	i;
-
-	i = 0;
-	while (*s)
-	{
-		if (i == maxlen - 1)
-			return (maxlen);
-		i++;
-		s++;
-	}
-	return i;
-}
-
 #endif
