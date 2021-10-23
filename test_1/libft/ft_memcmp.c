@@ -14,23 +14,21 @@
 
 int	ft_memcmp(const void *arr1, const void *arr2, size_t n)
 {
-	size_t			i;
 	unsigned char	*arrcpy1;
 	unsigned char	*arrcpy2;
 
-	i = 0;
 	if (!n)
 		return (0);
 	arrcpy1 = (unsigned char *)arr1;
 	arrcpy2 = (unsigned char *)arr2;
-	while (i < n)
+	while (n-- && (*arrcpy1 == *arrcpy2))
 	{
-		if ((arrcpy1[i]) == (arrcpy2[i]))
-			i++;
-		else
-			break ;
+		arrcpy1++;
+		arrcpy2++;
 	}
-	return ((arrcpy1[i]) - (arrcpy2[i]));
+	if (!(n + 1))
+		return (0);
+	return (*arrcpy1 - *arrcpy2);
 }
 
 // int main()
