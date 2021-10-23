@@ -39,16 +39,16 @@ int	ft_memcmp(const void *arr1, const void *arr2, size_t n)
 // 	printf ("%d\n", (ft_memcmp(src1, src2, 7)));
 // }
 
-int main()
-{
-	char *s1 = "\xff\xaa\xde\x12";
-	char *s2 = "\xff\xaa\xde\x12MACOSAAAAA";
-	size_t size = 5;
-	int i1 = memcmp(s1, s2, size);
-	int i2 = ft_memcmp(s1, s2, size);
+// int main()
+// {
+// 	char *s1 = "\xff\xaa\xde\x12";
+// 	char *s2 = "\xff\xaa\xde\x12MACOSAAAAA";
+// 	size_t size = 5;
+// 	int i1 = memcmp(s1, s2, size);
+// 	int i2 = ft_memcmp(s1, s2, size);
 
-	if (i1 == i2)
-		printf("TEST_SUCCESS");
-	else
-		printf("%d TEST_FAILED", i2);
-}
+// 	if (i1 == i2)
+// 		printf("TEST_SUCCESS");
+// 	else
+// 		printf("%d TEST_FAILED", i2);
+// }
