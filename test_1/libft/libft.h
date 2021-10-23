@@ -10,14 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef libft_H
-# define libft_H
+#ifndef LIBFT_H
+# define LIBFT_H
 
-# include <stddef.h>
-
-# include <stdio.h>//remove
-# include <string.h>//remove
-# include <stdlib.h>//remove or save for malloc??
+# include <stdlib.h>
+# include <unistd.h>
 
 size_t	ft_strlen(const char *s);
 int		ft_toupper(int character);
@@ -42,5 +39,16 @@ int		ft_isalnum(int c);
 void	*ft_calloc(size_t num, size_t size);
 void	ft_bzero(void *s, size_t n);
 int		ft_atoi(const char *str);
+char	*ft_itoa(int n);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putstr_fd(char *s, int fd);
+char	**ft_split(char const *s, char c);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
