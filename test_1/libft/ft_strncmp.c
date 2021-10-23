@@ -17,11 +17,12 @@ int	ft_strncmp(const char *string1, const char *string2, size_t num)
 	size_t	i;
 
 	i = 0;
-	while ((i < num) && (string1[i] == string2[i]) && (string1[i] != '\0'))
+	while ((i < num) && ((unsigned char)string1[i] == \
+		(unsigned char)string2[i]) && (string1[i] != '\0'))
 		i++;
-	if (string1[i] == string2[i])
+	if (((unsigned char)string1[i] == (unsigned char)string2[i]) || i == num)
 		return (0);
-	else if (string1[i] > string2[i])
+	else if ((unsigned char)string1[i] > (unsigned char)string2[i])
 		return (1);
 	else
 		return (-1);

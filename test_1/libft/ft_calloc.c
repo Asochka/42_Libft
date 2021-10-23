@@ -17,17 +17,24 @@ void	*ft_calloc(size_t num, size_t size)
 	void	*res;
 
 	res = (void *)malloc(num * size);
-	if (!res)
+	if ((!res) && (num != 0))
 		return (NULL);
 	return (res);
 }
 
-// int main()
+// int	main()
 // {
-// 	float *p;
+//  float *p;
 // 	p = (float *) ft_calloc(100, sizeof(float));
-// 	if(!p)
-// 		printf ("Allocation failure.");
+//  if(!p)
+//  	printf ("Allocation failure.");
+//  else
+//  	printf("good");
+// 	void	*str = ft_calloc(0, 0);
+
+// 	if (str == ((void *)0))
+// 		printf("TEST_FAILED");
 // 	else
-// 		printf("good");
+// 		printf("TEST_SUCCESS");
+// 	free(str);
 // }
