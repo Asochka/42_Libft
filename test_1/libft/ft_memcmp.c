@@ -19,6 +19,8 @@ int	ft_memcmp(const void *arr1, const void *arr2, size_t n)
 	unsigned char	*arrcpy2;
 
 	i = 0;
+	if (!n)
+		return (0);
 	arrcpy1 = (unsigned char *)arr1;
 	arrcpy2 = (unsigned char *)arr2;
 	while (i < n)
