@@ -46,21 +46,26 @@ void	ft_putnbr_fd(int n, int fd)
 		write(fd, "-", 1);
 	val = ft_sign(val) * val;
 	i = ft_size(val);
-	while (i > 0)
+	if (val == 0)
+		write(fd, "0", 1);
+	else
 	{
-		c = val / (ft_stepen(i)) + '0';
-		write(fd, &c, 1);
-		if (i == 1)
-			val = val % 10;
-		else
-			val = val % (ft_stepen(i));
-		i--;
+		while (i > 0)
+		{
+			c = val / (ft_stepen(i)) + '0';
+			write(fd, &c, 1);
+			if (i == 1)
+				val = val % 10;
+			else
+				val = val % (ft_stepen(i));
+			i--;
+		}
 	}
 }
 
 // int main()
 // {
-// 	int a = -2147483648;
+// 	int a = 0;
 
 // 	ft_putnbr_fd(a, 1);
 // }
