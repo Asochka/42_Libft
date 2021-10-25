@@ -6,7 +6,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 
 	i = 0;
-	new = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	new = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!new)
 		return (NULL);
 	while ((i++) < ft_strlen(s1))
@@ -17,3 +17,24 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	*new = '\0';
 	return (new);
 }
+
+// char	*ft_strjoin(char const *s1, char const *s2)
+// {
+// 	char	*newstr;
+// 	int		i;
+// 	int		len;
+//
+// 	i = 0;
+// 	if (!s1 || !s2)
+// 		return (NULL);
+// 	len = ft_strlen(s1) + ft_strlen(s2);
+// 	newstr = (char *)malloc((len + 1) * sizeof(char));
+// 	if (!newstr)
+// 		return (NULL);
+// 	while (*s1 != '\0')
+// 		newstr[i++] = *(s1++);
+// 	while (*s2 != '\0')
+// 		newstr[i++] = *(s2++);
+// 	newstr[i] = '\0';
+// 	return (newstr);
+// }
