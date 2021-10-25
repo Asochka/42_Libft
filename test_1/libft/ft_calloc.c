@@ -23,20 +23,3 @@ void	*ft_calloc(size_t num, size_t size)
 		ft_bzero(res, num * size);
 	return (res);
 }
-
-// int	main()
-// {
-//  float *p;
-// 	p = (float *) ft_calloc(100, sizeof(float));
-//  if(!p)
-//  	printf ("Allocation failure.");
-//  else
-//  	printf("good");
-// 	void	*str = ft_calloc(0, 0);
-
-// 	if (str == ((void *)0))
-// 		printf("TEST_FAILED");
-// 	else
-// 		printf("TEST_SUCCESS");
-// 	free(str);
-// }

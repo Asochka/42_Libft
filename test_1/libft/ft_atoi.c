@@ -52,9 +52,3 @@ int	ft_atoi(const char *str)
 	else
 		return (res);
 }
-
-// int main()
-// {
-// 	const char *str = "  ++-----0.23232dksk929w";
-// 	printf("%d", ft_atoi(str));
-// }

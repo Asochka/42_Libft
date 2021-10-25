@@ -25,15 +25,3 @@ void	*ft_memmove(void *destptr, const void *srcptr, size_t num)
 	}
 	return (destptr);
 }
-
-// int main()
-// {
-// 	unsigned char src[10]= "123456789";
-// 	unsigned char src1[10]= "123456789";
-
-// 	memmove(&src1[4], &src1[3], 16);
-// 	ft_memmove(&src[4], &src[3], 16);
-
-// 	printf("%s\n", src1);
-// 	printf("%s", src);
-// }

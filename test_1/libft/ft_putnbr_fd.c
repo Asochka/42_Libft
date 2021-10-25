@@ -74,10 +74,3 @@ void	ft_putnbr_fd(int n, int fd)
 		}
 	}
 }
-
-// int main()
-// {
-// 	int a = 0;
-
-// 	ft_putnbr_fd(a, 1);
-// }
