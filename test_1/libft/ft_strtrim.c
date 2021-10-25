@@ -23,6 +23,19 @@ static int	ft_eleminset(char elem, char const *set)
 	return (1);
 }
 
+static void	ft_strlcpy2(char *dst, const char *src, size_t size)
+{
+	size_t	i;
+
+	i = 0;
+	while ((i < (size - 1)) && (*src))
+	{
+		*(dst++) = *(src++);
+		i++;
+	}
+	*dst = '\0';
+}
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*str;
@@ -43,13 +56,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (s1[start] != '\0' && ft_eleminset(s1[start], set))
 		start++;
 	end = ft_strlen(s1) - 1;
-	while ((end) > start && ft_eleminset(s1[end], set))
+	while (end > start && ft_eleminset(s1[end], set))
 		end--;
 	str = (char *)malloc(sizeof(char) * (end - start + 2));
 	if (!(str))
 		return (NULL);
-	while (start <= end)
-		str[i++] = s1[start++];
-	str[i] = '\0';
+	ft_strlcpy2(str, &s1[start], end - start + 2);
 	return (str);
 }
